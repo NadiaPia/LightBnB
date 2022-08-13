@@ -58,7 +58,6 @@ module.exports = function(router, database) {
     const userId = req.session.userId;
     console.log(req.session.userId)
     if (!userId) {      
-      console.log("Helllo!")
       res.send({message: "not logged in"});
       return;
     }
